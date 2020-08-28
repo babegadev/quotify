@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotify</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="quote.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            newQuote();
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div id="container">
+            <div id="home" class="flex-center flex-column">
+                <div id="quote-body">
+                    <div id="loader" class=""></div>
+                    <h3 id="quoteContent">"Loading"</h3>
+                    <p id="quoteAuthor">-babegadev</p>
+                </div>
+                <form>
+                    <input type="text" id="tags" placeholder="Quote Tags">
+                </form>
+                <button class="btn" onclick="newQuote()">New Quote</button>
+                <a class="btn" id="tweet-quote">Tweet</a>
+                <a class="btn" href="index.html">Back Home</a>
+            </div>
+        </div>
+    </div>
+    <script src="quote.js"></script>
+</body>
+</html>

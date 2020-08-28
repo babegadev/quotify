@@ -1,0 +1,47 @@
+#quote-body {
+    background-color: white;
+    margin-bottom: 2rem;
+    width: 40rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+}
+
+#quoteContent {
+    width: 95%;
+}
+
+#quoteAuthor {
+    font-size: 1.8rem;
+}
+
+.autocomplete-items {
+    margin-bottom: 1rem;
+}
+
+div {
+    font-size: 2rem;
+}
+
+/* Loader */
+#loader {
+    border: 1.6rem solid white;
+    border-radius: 50%;
+    border-top: 1.6rem solid #56a5eb;
+    width: 10rem;
+    height: 10rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
